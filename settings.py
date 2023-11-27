@@ -1,0 +1,2 @@
+valid_email = 'test567@test.ru'
+valid_password = '123qwe'
