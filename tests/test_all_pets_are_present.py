@@ -15,7 +15,7 @@ def test_all_pets_are_present(test_show_my_pets):
     user_statistic = pytest.driver.find_element(By.CSS_SELECTOR, '.\\.col-sm-4.left')
 
     WebDriverWait(pytest.driver, 10).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, '.table.table-hover tbosy tr')))
+        EC.presence_of_element_located((By.CSS_SELECTOR, '.table.table-hover tbody tr')))
 
     # Сохранение карточек питомцев
     pet_cards = pytest.driver.find_elements(By.CSS_SELECTOR, '.table.table-hover tbody tr')
